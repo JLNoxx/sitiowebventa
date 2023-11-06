@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Para mantener el footer abajo */
+}
+
+header {
+    background-color: #0a68d4e7;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Agregamos posición relativa para que la posición absoluta de la imagen sea relativa a este elemento */
+}
+
+.header-image {
+    position: absolute; /* Establecemos posición absoluta para la imagen */
+    top: 10px; /* Ajusta la posición vertical según tu preferencia */
+    left: 40px; /* Ajusta la posición horizontal según tu preferencia */
+    max-width: 150px; /* Ajusta el ancho de la imagen según tu preferencia */
+}
+
+.product img {
+    width: 200px;  /* Establece el ancho deseado */
+    height: 150px; /* Establece el alto deseado */
+}
+
+
+
+.content {
+    flex-grow: 1; /* Para que el contenido ocupe todo el espacio restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.categories {
+    text-align: center;
+    margin: 20px;
+}
+
+.filter-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0a68d4e7;
+    color: rgba(255, 255, 255, 0.801);
+    padding: 0px;
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-details {
+    text-align: left;
+    margin-left: 20px;
+    line-height: 0.5;
+}
+
+.whatsapp-link {
+    display: block;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
